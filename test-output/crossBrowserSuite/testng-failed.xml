@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [crossBrowserSuite]">
+  <test thread-count="5" name="chromeTest(failed)">
+    <parameter name="chromebrowser" value="chrome"/>
+    <classes>
+      <class name="com.myStore.testCases.EndToEndTest">
+        <methods>
+          <include name="addToCartTest"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.myStore.testCases.EndToEndTest -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)">
+    <parameter name="firefoxbrowser" value="firefox"/>
+    <classes>
+      <class name="com.myStore.testCases.EndToEndTest">
+        <methods>
+          <include name="addToCartTest"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.myStore.testCases.EndToEndTest -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [crossBrowserSuite] -->
